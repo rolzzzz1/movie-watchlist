@@ -12,6 +12,7 @@ header {
 }
 
 .headerText {
+  height: 40vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
