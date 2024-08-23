@@ -6,5 +6,7 @@ body {
 
 header {
   background-image: url(/img/headerBack.png);
-  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
 }
