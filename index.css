@@ -6,4 +6,5 @@ body {
 
 header {
   background-image: url(/img/headerBack.png);
+  height: 50vh;
 }
