@@ -9,7 +9,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   resize: both;
-  height: 30%;
+  height: 40%;
 }
 
 .headerText {
@@ -34,5 +34,5 @@ header {
 }
 
 main {
-  height: 70%;
+  height: 60%;
 }
