@@ -12,6 +12,7 @@ body {
   background-image: url("/img/headerBack.jpg"); */
   /* background-repeat: no-repeat;
   background-size: cover; */
+  max-width: 550px;
 }
 
 header {
