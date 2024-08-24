@@ -2,17 +2,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/img/headerBack.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 header {
-  /* background-image: url(/img/headerBack.jpg); */
-  /* background-color: rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
-  background-size: ; */
-  height: 40vh;
+  height: 30vh;
+  background-image: url("/img/headerBack1.png");
 }
 
 .headerText {
