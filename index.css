@@ -5,10 +5,11 @@ body {
 }
 
 header {
-  height: 50vh;
   background-image: url("/img/headerBack1.png");
   background-repeat: no-repeat;
-  background-size: 150px;
+  background-size: cover;
+  resize: both;
+  width: 100%;
   height: 200px;
 }
 
