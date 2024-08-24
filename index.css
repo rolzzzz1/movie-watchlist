@@ -6,15 +6,11 @@ body {
   max-width: 550px;
 }
 
-#overlay {
-  filter: brightness(50%);
+header {
+  /* filter: brightness(50%); */
   background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover;
-  height: 100%;
-}
-
-header {
   height: 40vh;
 }
 
