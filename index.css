@@ -23,7 +23,8 @@ header {
 
   background-image: url("/img/headerBack1.png");
   background-size: cover;
-  height: 30vh;
+  -webkit-background-size: cover;
+  height: 40vh;
   /* background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
