@@ -2,9 +2,16 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/img/headerBack.jpg");
-  background-repeat: no-repeat;
+
+  background: no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background-image: url("/img/headerBack.jpg");
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 header {
