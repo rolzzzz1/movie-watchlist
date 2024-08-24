@@ -5,6 +5,7 @@ body {
 }
 
 header {
+  filter: brightness(50%);
   background-image: url("/img/headerBack2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,8 +20,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin: 0 40px;
-  background-color: #0e0e0e;
-  backface-visibility: visible;
+  color: #ffffff;
 }
 
 #overlay {
@@ -39,4 +39,5 @@ header {
 
 main {
   height: 70%;
+  margin: auto;
 }
