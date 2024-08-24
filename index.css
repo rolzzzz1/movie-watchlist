@@ -4,6 +4,7 @@ body {
   padding: 0;
   height: 100vh;
   max-width: 550px;
+  min-width: 500px;
 }
 
 header {
