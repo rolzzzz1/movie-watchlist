@@ -3,15 +3,6 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
-  /* background: no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  background-image: url("/img/headerBack.jpg"); */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   max-width: 550px;
 }
 
@@ -22,6 +13,7 @@ header {
   background-size: cover;
   resize: both; */
 
+  filter: brightness(50%);
   background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover;
