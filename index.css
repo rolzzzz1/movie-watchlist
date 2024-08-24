@@ -17,7 +17,7 @@ body {
   background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover;
-  height: 40vh;
+
   /* background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -25,6 +25,10 @@ body {
   -o-background-size: cover; */
   /* height: 30%;
   min-width: 550px; */
+}
+
+header {
+  height: 40vh;
 }
 
 .headerText {
