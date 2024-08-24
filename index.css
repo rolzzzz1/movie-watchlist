@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
 
-  background: no-repeat center center fixed;
+  /* background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 
-  background-image: url("/img/headerBack.jpg");
+  background-image: url("/img/headerBack.jpg"); */
   /* background-repeat: no-repeat;
   background-size: cover; */
 }
@@ -20,6 +20,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   resize: both; */
+
+  background-image: url("/img/headerBack1.png");
+
+  background: no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 30%;
   min-width: 550px;
 }
