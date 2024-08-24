@@ -17,7 +17,7 @@ body {
   background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover;
-
+  height: 100%;
   /* background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
