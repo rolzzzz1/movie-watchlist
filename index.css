@@ -6,15 +6,9 @@ body {
 
 header {
   height: 30vh;
-  /* background-image: url("/img/headerBack1.png");
+  background-image: url("/img/headerBack1.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-clip: border-box; */
-}
-
-header img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
 }
 
 .headerText {
