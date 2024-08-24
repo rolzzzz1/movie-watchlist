@@ -7,6 +7,7 @@ body {
 header {
   height: 30vh;
   background-image: url("/img/headerBack1.png");
+  background-size: cover;
 }
 
 .headerText {
