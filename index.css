@@ -2,14 +2,17 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-image: url("/img/headerBack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  filter: brightness(50%);
+  /* filter: brightness(50%);
   background-image: url("/img/headerBack2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  resize: both;
+  resize: both; */
   height: 30%;
   min-width: 550px;
 }
