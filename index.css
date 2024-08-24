@@ -5,13 +5,14 @@ body {
   height: 100vh;
   max-width: 550px;
   min-width: 500px;
+  background-image: url("/img/headerBack.jpg");
 }
 
 header {
   /* filter: brightness(50%); */
-  background-image: url("/img/headerBack1.png");
+  /* background-image: url("/img/headerBack1.png");
   background-size: cover;
-  -webkit-background-size: cover;
+  -webkit-background-size: cover; */
   height: 40vh;
 }
 
