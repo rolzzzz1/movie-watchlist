@@ -20,6 +20,7 @@ header {
   align-items: center;
   margin: 0 40px;
   background-color: #0e0e0e;
+  fill-opacity: 100%;
 }
 
 #overlay {
