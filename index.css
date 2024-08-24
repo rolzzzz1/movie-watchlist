@@ -19,6 +19,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin: 0 40px;
+  background-color: #0e0e0e;
 }
 
 #overlay {
