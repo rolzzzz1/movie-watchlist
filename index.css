@@ -7,24 +7,11 @@ body {
 }
 
 #overlay {
-  /* filter: brightness(50%);
-  background-image: url("/img/headerBack2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  resize: both; */
-
   filter: brightness(50%);
   background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover;
   height: 100%;
-  /* background: no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
-  /* height: 30%;
-  min-width: 550px; */
 }
 
 header {
