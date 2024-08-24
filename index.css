@@ -22,7 +22,7 @@ header {
   resize: both; */
 
   background-image: url("/img/headerBack1.png");
-
+  background-size: cover;
   /* background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
