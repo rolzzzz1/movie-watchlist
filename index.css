@@ -28,8 +28,8 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 30%;
-  min-width: 550px;
+  /* height: 30%;
+  min-width: 550px; */
 }
 
 .headerText {
