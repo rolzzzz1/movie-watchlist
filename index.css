@@ -10,9 +10,11 @@ header {
   background-size: cover;
   resize: both;
   height: 30%;
+  min-width: 550px;
 }
 
 .headerText {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
