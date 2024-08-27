@@ -7,9 +7,8 @@ body {
   max-width: 550px;
   background-image: url("/img/headerBack.jpg");
   background-size: cover;
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 -50px;
+  background-position: 0 -100px;
 }
 
 header {
