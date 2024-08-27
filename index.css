@@ -17,7 +17,7 @@ header {
   /* background-image: url("/img/headerBack1.png");
   background-size: cover;
   -webkit-background-size: cover; */
-  height: 40vh;
+  max-height: 208px;
 }
 
 .headerText {
