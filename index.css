@@ -3,8 +3,8 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
+  max-height: 780px;
   max-width: 550px;
-  min-width: 500px;
   background-image: url("/img/headerBack.jpg");
   background-size: cover;
   -webkit-background-size: cover;
