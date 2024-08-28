@@ -7,6 +7,7 @@ body {
   max-width: 550px;
 }
 
+/* FONTS */
 .inter-medium {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -28,15 +29,10 @@ body {
   font-style: normal;
 }
 
+/* HEADER */
 header {
-  /* background-image: url("/img/headerBack.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -180px; */
-  /* background: #000000; */
   position: relative;
   height: 208px;
-  /* overflow: hidden; */
 }
 
 header > img {
@@ -50,7 +46,6 @@ header > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin: 0 40px; */
   opacity: 100%;
   color: #ffffff;
   height: 80%;
@@ -76,7 +71,6 @@ header > img {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  /* background-color: #ffffff; */
 }
 
 .icon-msg {
@@ -94,7 +88,6 @@ header > img {
   position: absolute;
   top: 120%;
   transform: translate(0, -120%);
-  /* display: block; */
   width: 100%;
   opacity: 100%;
   margin: 0 auto;
