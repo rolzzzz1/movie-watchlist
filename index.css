@@ -58,6 +58,10 @@ header > img {
   font-size: 42.8px;
 }
 
+main {
+  max-width: 550px;
+}
+
 .startExplore {
   height: 70%;
   display: flex;
