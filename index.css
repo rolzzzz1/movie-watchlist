@@ -12,10 +12,8 @@ body {
 }
 
 header {
-  /* filter: brightness(50%); */
-  /* background-image: url("/img/headerBack1.png");
-  background-size: cover;
-  -webkit-background-size: cover; */
+  background-color: black;
+  opacity: 20%;
   max-height: 208px;
 }
 
