@@ -74,7 +74,12 @@ header > img {
   cursor: pointer;
 }
 
-.formDiv {
+/* .formDiv {
+  color: #000000;
+  border: 1px solid #000000;
+} */
+
+.formDiv > form > input {
   color: #000000;
   border: 1px solid #000000;
 }
