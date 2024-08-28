@@ -75,6 +75,7 @@ header > img {
 }
 
 .formDiv {
+  position: absolute;
   margin: -40px 0 0 0;
   width: 100%;
   opacity: 100%;
