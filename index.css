@@ -27,13 +27,17 @@ body {
 }
 
 header {
-  background-image: url("/img/headerBack.jpg");
+  /* background-image: url("/img/headerBack.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 -180px;
+  background-position: 0 -180px; */
   /* background-color: black;
   opacity: 50%; */
   height: 208px;
+}
+
+header > img {
+  object-fit: cover;
 }
 
 .headerText {
