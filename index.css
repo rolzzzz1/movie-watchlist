@@ -50,8 +50,8 @@ header > img {
 
   position: absolute;
   top: 50%;
-  left: 25%;
-  transform: translate(-25%, -50%);
+  left: 10%;
+  transform: translate(-10%, -50%);
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
