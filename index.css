@@ -89,7 +89,6 @@ header > img {
   width: 100%;
   opacity: 100%;
   margin: 0 auto;
-  width: 300px;
   max-width: 550px;
 }
 
@@ -104,6 +103,7 @@ header > img {
   border-radius: 5px 0 0 5px;
   margin: 0;
   color: #6b7280;
+  width: 60%;
 }
 
 .icon-msg {
