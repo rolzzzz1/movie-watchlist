@@ -81,7 +81,7 @@ main {
 .formDiv {
   position: absolute;
   margin: -10px 0 0 0;
-  width: 100%;
+  width: 300px;
   opacity: 100%;
 }
 
