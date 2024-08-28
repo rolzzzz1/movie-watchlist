@@ -49,9 +49,9 @@ header > img {
   height: 100%;
 
   position: absolute;
-  /* top: 50%;
-  left: 10%;
-  transform: translate(-10%, -50%); */
+  top: 50%;
+  /* left: 10%; */
+  transform: translate(0, -50%);
 }
 
 .headerText > h2 {
