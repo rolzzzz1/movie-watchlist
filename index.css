@@ -93,7 +93,7 @@ header > img {
 }
 
 .formDiv > form {
-  width: 100%;
+  display: flex;
 }
 
 .formDiv > form > input {
