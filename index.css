@@ -80,3 +80,7 @@ header > img {
   width: 100%;
   opacity: 100%;
 }
+
+.formDiv > input {
+  width: 80%;
+}
