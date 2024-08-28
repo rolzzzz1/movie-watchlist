@@ -40,7 +40,7 @@ header {
 
 header > img {
   object-fit: cover;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 .headerText {
