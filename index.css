@@ -14,7 +14,7 @@ body {
 header {
   background-color: black;
   opacity: 20%;
-  max-height: 208px;
+  height: 208px;
 }
 
 .headerText {
