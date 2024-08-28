@@ -58,7 +58,7 @@ header > img {
   font-size: 42.8px;
 }
 
-main {
+.container {
   max-width: 550px;
 }
 
@@ -71,6 +71,10 @@ main {
   /* background-color: #ffffff; */
 }
 
+.icon-msg {
+  color: #dfdddd;
+}
+
 .btnWatchlist {
   background: none;
   border: none;
@@ -81,9 +85,10 @@ main {
 .formDiv {
   position: absolute;
   margin: -10px 0 0 0;
+  display: block;
   width: 100%;
   opacity: 100%;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .formDiv > form {
