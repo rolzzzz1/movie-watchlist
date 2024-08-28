@@ -11,6 +11,20 @@ body {
   background-position: 0 -180px;
 }
 
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-extrabold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 header {
   /* background-color: black;
   opacity: 50%; */
@@ -27,6 +41,10 @@ header {
   height: 100%;
 }
 
+.headerText > h2 {
+  font-size: 42.8px;
+}
+
 .startExplore {
   height: 70%;
   display: flex;
@@ -34,4 +52,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+}
+
+.btn {
+  background: none;
+  border: none;
 }
