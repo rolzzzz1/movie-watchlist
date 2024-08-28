@@ -75,5 +75,6 @@ header > img {
 }
 
 .formDiv {
+  display: block;
   width: 100%;
 }
