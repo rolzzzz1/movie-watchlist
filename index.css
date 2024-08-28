@@ -75,6 +75,7 @@ header > img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
   /* background-color: #ffffff; */
 }
 
