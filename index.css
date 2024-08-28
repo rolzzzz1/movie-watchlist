@@ -27,6 +27,7 @@ header {
   background-repeat: no-repeat;
   background-position: 0 -180px; */
   /* background: #000000; */
+  position: relative;
   height: 208px;
   overflow: hidden;
 }
