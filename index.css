@@ -43,7 +43,7 @@ header > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 40px;
+  /* margin: 0 40px; */
   opacity: 100%;
   color: #ffffff;
   height: 100%;
