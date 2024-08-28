@@ -36,7 +36,7 @@ header {
   /* background: #000000; */
   position: relative;
   height: 208px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header > img {
