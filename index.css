@@ -67,9 +67,13 @@ header > img {
   background-color: #ffffff;
 }
 
-.btn {
+.btnWatchlist {
   background: none;
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.formDiv {
+  color: #000000;
 }
