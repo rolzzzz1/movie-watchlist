@@ -33,11 +33,14 @@ header {
   background-position: 0 -180px; */
   /* background-color: black;
   opacity: 50%; */
+  background: #000000;
   height: 208px;
+  overflow: hidden;
 }
 
 header > img {
   object-fit: cover;
+  opacity: 0.4;
 }
 
 .headerText {
