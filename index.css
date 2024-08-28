@@ -84,7 +84,7 @@ header > img {
 
 .formDiv {
   position: absolute;
-  margin: -10px 0 0 0;
+  margin: -20px 0 0 0;
   display: block;
   width: 100%;
   opacity: 100%;
@@ -102,6 +102,7 @@ header > img {
   border: 1px solid #9ca3af;
   border-radius: 5px 0 0 5px;
   margin: 0;
+  color: #6b7280;
 }
 
 .icon-msg {
@@ -114,5 +115,7 @@ header > img {
   margin: 0;
   border-radius: 0 5px 5px 0;
   border: 1px solid #9ca3af;
+  border-left: 1px solid #000000;
   background-color: #ffffff;
+  color: #374151;
 }
