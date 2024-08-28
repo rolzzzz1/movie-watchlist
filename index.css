@@ -94,6 +94,7 @@ header > img {
 
 .formDiv > form {
   display: flex;
+  justify-content: center;
 }
 
 .formDiv > form > input {
