@@ -89,6 +89,7 @@ header > img {
   width: 100%;
   opacity: 100%;
   margin: 0 auto;
+  width: 300px;
   max-width: 550px;
 }
 
