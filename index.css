@@ -51,7 +51,7 @@ header > img {
   position: absolute;
   top: 50%;
   /* left: 10%; */
-  transform: translate(0, -50%);
+  /* transform: translate(0, -50%); */
 }
 
 .headerText > h2 {
