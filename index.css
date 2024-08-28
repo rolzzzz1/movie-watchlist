@@ -98,12 +98,15 @@ header > img {
 .formDiv > form > input {
   padding: 10px 10px;
   border-radius: 5px;
+  margin: 0;
 }
 
 .icon-msg {
   color: #dfdddd;
+  font-size: 18px;
 }
 
 .searchBtn {
   padding: 10px 10px;
+  margin: 0;
 }
