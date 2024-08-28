@@ -46,8 +46,8 @@ header > img {
   /* margin: 0 40px; */
   opacity: 100%;
   color: #ffffff;
-  /* height: 80%; */
-  /* width: 100%; */
+  height: 80%;
+  width: 100%;
   position: absolute;
   top: 50%;
   /* left: 10%; */
@@ -75,6 +75,5 @@ header > img {
 }
 
 .formDiv {
-  display: block;
-  width: 100%;
+  margin: -40px 0 0 0;
 }
