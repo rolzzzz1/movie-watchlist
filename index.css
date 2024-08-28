@@ -32,9 +32,14 @@ header {
 }
 
 header > img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
+  object-fit: cover; */
+
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
+  filter: brightness(0.4);
 }
 
 .headerText {
@@ -45,6 +50,13 @@ header > img {
   opacity: 100%;
   color: #ffffff;
   height: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .headerText > h2 {
