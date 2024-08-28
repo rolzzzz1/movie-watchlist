@@ -98,7 +98,7 @@ header > img {
 
 .formDiv > form > input {
   padding: 10px 10px;
-  border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 5px;
   margin: 0;
 }
 
@@ -110,4 +110,6 @@ header > img {
 .searchBtn {
   padding: 10px 10px;
   margin: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffffff;
 }
