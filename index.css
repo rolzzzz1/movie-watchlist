@@ -80,6 +80,7 @@ header > img {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px 10px;
 }
 
 .formDiv {
@@ -97,4 +98,5 @@ header > img {
 
 .formDiv > form > input {
   padding: 10px 10px;
+  border-radius: 5px;
 }
