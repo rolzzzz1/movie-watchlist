@@ -77,11 +77,12 @@ header > img {
 .formDiv {
   position: absolute;
   margin: -10px 0 0 0;
+  display: block;
   width: 100%;
   opacity: 100%;
 }
 
 .formDiv > input {
-  padding: 5px 5px;
+  padding: 10px 10px;
   width: 80%;
 }
