@@ -86,6 +86,10 @@ main {
   align-items: center;
 }
 
-.formDiv > input {
+.formDiv > form {
+  width: 100%;
+}
+
+.formDiv > form > input {
   padding: 10px 10px;
 }
