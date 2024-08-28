@@ -92,8 +92,8 @@ header > img {
 
 .formDiv {
   position: absolute;
-  top: 150%;
-  transform: translate(0, -150%);
+  top: 130%;
+  transform: translate(0, -130%);
   /* display: block; */
   width: 100%;
   opacity: 100%;
