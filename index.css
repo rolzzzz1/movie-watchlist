@@ -83,6 +83,7 @@ main {
   margin: -10px 0 0 0;
   width: 300px;
   opacity: 100%;
+  align-items: center;
 }
 
 .formDiv > input {
