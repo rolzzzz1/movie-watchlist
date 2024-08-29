@@ -125,6 +125,8 @@ header > img {
 
 .movieData {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .moviePoster {
