@@ -1,7 +1,7 @@
 const searchBtn = document.getElementById("searchBtn");
 const movieInput = document.getElementById("movieInput");
 
-searchBtn.addEventListener("submit", (event) => {
+searchBtn.addEventListener("click", (event) => {
   event.preventDefault();
   handleSearch();
 });
