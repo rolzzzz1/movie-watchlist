@@ -123,6 +123,10 @@ header > img {
   font-size: 18px;
 }
 
+.movieData {
+  display: flex;
+}
+
 .moviePoster {
   height: 150px;
   width: 100px;
