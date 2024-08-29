@@ -122,3 +122,12 @@ header > img {
   color: #dfdddd;
   font-size: 18px;
 }
+
+.moviePoster {
+  height: 150px;
+  width: 100px;
+}
+
+.movieData-top > h2 {
+  font-size: 18px;
+}
