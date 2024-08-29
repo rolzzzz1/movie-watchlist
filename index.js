@@ -24,7 +24,7 @@ function handleSearch() {
 function populateMovie(data) {
   console.log(data.Search);
 
-  for (let movie in Search) {
+  for (let movie in data.Search) {
     console.log(movie);
   }
 
