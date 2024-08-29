@@ -196,5 +196,8 @@ header > img {
   border: none;
   display: inline-flex;
   align-items: center;
+}
+
+.plusBtn > img {
   margin-right: 10px;
 }
