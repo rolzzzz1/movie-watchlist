@@ -165,4 +165,7 @@ header > img {
 
 .plusBtn {
   background: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
 }
