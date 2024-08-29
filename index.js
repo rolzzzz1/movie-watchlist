@@ -18,7 +18,7 @@ function handleSearch() {
 
   fetch(`https://www.omdbapi.com/?apikey=cddaec6f&t=${movieInput.value}`)
     .then((res) => res.json())
-    .then((data) => populateMovie(data.Search));
+    .then((data) => populateMovie(data));
 }
 
 function populateMovie(movies) {
