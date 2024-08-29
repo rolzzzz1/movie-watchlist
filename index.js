@@ -22,7 +22,7 @@ function handleSearch() {
 }
 
 function populateMovie(data) {
-  console.log(data);
+  console.log(data.Search);
 
   // movieList.innerHTML += `
   //   <div class="movieData">
