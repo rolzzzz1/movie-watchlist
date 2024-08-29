@@ -32,9 +32,9 @@ function populateMovie(data) {
       />
       <div class="movieDataText">
         <div class="movieData-top">
-          <h2 class="inter-medium">Blade Runner</h2>
+          <h2 class="inter-medium">${data.Title}</h2>
           <p class="inter-regular">
-            <img src="/img/star.png" /> 8.1
+            <img src="/img/star.png" /> ${data.Ratings[0].Value}
           </p>
         </div>
         <div class="movieData-middle">
