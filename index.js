@@ -24,6 +24,10 @@ function handleSearch() {
 function populateMovie(data) {
   console.log(data.Search);
 
+  for (let movie in Search) {
+    console.log(movie);
+  }
+
   // movieList.innerHTML += `
   //   <div class="movieData">
   //     <img
