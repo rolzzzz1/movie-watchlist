@@ -153,6 +153,7 @@ header > img {
 .movieDataText {
   display: flex;
   flex-direction: column;
+  gap: 0;
   /* margin: 20px 0; */
 }
 
