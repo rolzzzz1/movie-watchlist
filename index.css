@@ -153,6 +153,7 @@ header > img {
 .movieData-top {
   display: flex;
   gap: 10px;
+  margin: 0;
 }
 
 .movieData-top > h2 {
@@ -162,6 +163,7 @@ header > img {
 .movieData-middle {
   display: flex;
   gap: 20px;
+  margin: 0;
 }
 
 .plusBtn {
