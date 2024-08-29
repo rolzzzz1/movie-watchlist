@@ -38,15 +38,14 @@ function populateMovie(data) {
           </p>
         </div>
         <div class="movieData-middle">
-          <p class="inter-regular">117min</p>
-          <p class="inter-regular">Action, Drama, Sci-fi</p>
+          <p class="inter-regular">${data.Runtime}</p>
+          <p class="inter-regular">${data.Genre}</p>
           <button class="plusBtn inter-regular">
             <img src="/img/plusIcon.png" /> Watchlist
           </button>
         </div>
         <p class="inter-regular">
-          A blade runner must pursue and terminate four replicants who stole a ship
-          in space, and have returned to Earth to find their creator.
+          ${data.Plot}
         </p>
       </div>
     </div>;
