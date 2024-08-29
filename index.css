@@ -154,7 +154,7 @@ header > img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* margin: 20px 0; */
+  margin: 20px 0;
 }
 
 .movieDataText > p {
