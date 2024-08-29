@@ -25,7 +25,7 @@ function populateMovie(movies) {
   console.log(movies);
 
   for (let movie in movies) {
-    console.log(movie);
+    console.log(movies[movie]);
   }
 
   // movieList.innerHTML += `
