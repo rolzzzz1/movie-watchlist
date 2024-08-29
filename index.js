@@ -1,7 +1,7 @@
 const searchBtn = document.getElementById("searchBtn");
 const movieInput = document.getElementById("movieInput");
 
-searchBtn.addEventListener("click", handleSearch);
+searchBtn.addEventListener("click", handleSearch());
 
 function handleSearch() {
   console.log(movieInput.value);
