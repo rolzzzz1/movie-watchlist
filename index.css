@@ -137,6 +137,7 @@ header > img {
   align-items: center;
   column-gap: 20px;
   margin: 40px;
+  border-bottom: 1.5px solid #e5e7eb;
 }
 
 .movieData > div > p {
