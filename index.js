@@ -1,7 +1,13 @@
 const searchBtn = document.getElementById("searchBtn");
 const movieInput = document.getElementById("movieInput");
+const searchForm = document.getElementById("searchForm");
 
-searchBtn.addEventListener("click", (event) => {
+// searchBtn.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   handleSearch();
+// });
+
+searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   handleSearch();
 });
