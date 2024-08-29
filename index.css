@@ -153,8 +153,12 @@ header > img {
 .movieDataText {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 10px;
   /* margin: 20px 0; */
+}
+
+.movieDataText > p {
+  margin: 0;
 }
 
 .movieData-top {
@@ -165,11 +169,20 @@ header > img {
 
 .movieData-top > h2 {
   font-size: 18px;
+  margin: 0;
+}
+
+.movieData-top > p {
+  margin: 0;
 }
 
 .movieData-middle {
   display: flex;
   gap: 20px;
+  margin: 0;
+}
+
+.movieData-middle > p {
   margin: 0;
 }
 
