@@ -127,6 +127,7 @@ header > img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   margin-top: 40px;
 }
 
@@ -137,6 +138,7 @@ header > img {
 
 .movieData-top {
   display: flex;
+  gap: 10px;
 }
 
 .movieData-top > h2 {
@@ -145,4 +147,5 @@ header > img {
 
 .movieData-middle {
   display: flex;
+  gap: 10px;
 }
