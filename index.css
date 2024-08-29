@@ -8,6 +8,13 @@ body {
 }
 
 /* FONTS */
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .inter-medium {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -131,6 +138,11 @@ header > img {
   margin: 40px;
 }
 
+.movieData > div > p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
 .moviePoster {
   height: 150px;
   width: 100px;
@@ -148,4 +160,8 @@ header > img {
 .movieData-middle {
   display: flex;
   gap: 20px;
+}
+
+.plusBtn {
+  background: none;
 }
