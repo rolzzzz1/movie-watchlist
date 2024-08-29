@@ -41,7 +41,8 @@ function populateMovie(movies) {
             <h2 class="inter-medium">${currentMovie.Title}</h2>
             <p class="inter-regular">
               <img src="/img/star.png" /> ${
-                currentMovie.Ratings[0].Value.split("/")[0]
+                currentMovie.Ratings[0].Value
+                // currentMovie.Ratings[0].Value.split("/")[0]
               }
             </p>
           </div>
