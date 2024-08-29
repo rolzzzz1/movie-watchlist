@@ -150,6 +150,10 @@ header > img {
   width: 100px;
 }
 
+.movieDataText {
+  margin: 20px 0;
+}
+
 .movieData-top {
   display: flex;
   gap: 10px;
