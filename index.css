@@ -151,7 +151,8 @@ header > img {
 }
 
 .movieDataText {
-  margin: 20px 0;
+  display: flex;
+  /* margin: 20px 0; */
 }
 
 .movieData-top {
