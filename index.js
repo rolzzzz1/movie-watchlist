@@ -73,9 +73,9 @@ function populateMovie(mList) {
 let plusButtons = document.getElementById("plusBtn");
 console.log(plusButtons);
 
-plusBtn.addEventListener("click", function handlePlusClick() {
-  console.log(plusBtn.getAttribute("data-id"));
-});
+// plusBtn.addEventListener("click", function handlePlusClick() {
+//   console.log(plusBtn.getAttribute("data-id"));
+// });
 
 /* <div class="movieData">
   <img
