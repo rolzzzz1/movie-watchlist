@@ -44,9 +44,7 @@ function populateMovie(mList) {
           <div class="movieData-top">
             <h2 class="inter-medium">${data.Title}</h2>
             <p class="inter-regular">
-              <img src="/img/star.png" /> ${
-                // data.Ratings[0].Value.split("/")[0]
-              }
+              <img src="/img/star.png" /> ${data.Ratings[0].Value.split("/")[0]}
             </p>
           </div>
           <div class="movieData-middle">
