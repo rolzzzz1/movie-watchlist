@@ -26,7 +26,12 @@ function populateMovie(mList) {
 
   for (let movie in mList) {
     let currentMovie = mList[movie];
-    console.log(currentMovie);
+    console.log(currentMovie.imdbID);
+
+    fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+
     // movieList.innerHTML += `
     //   <div class="movieData">
     //     <img
