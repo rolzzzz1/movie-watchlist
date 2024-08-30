@@ -11,7 +11,7 @@ searchForm.addEventListener("submit", (event) => {
 function handleSearch() {
   fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value1}`)
     .then((res) => {
-      if (res.ok) {
+      if (!res.ok) {
         throw Error("Something went wrong...");
       }
       return res.json();
