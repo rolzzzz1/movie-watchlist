@@ -73,6 +73,7 @@ header > img {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* SEARCH FORM CSS */
