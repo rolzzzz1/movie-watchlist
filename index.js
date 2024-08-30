@@ -66,12 +66,12 @@ function populateMovie(mList) {
             </div>
           </div>
         `;
+      });
 
-        document
-          .getElementById(`plusBtn${data.imdbID}`)
-          .addEventListener("click", function addTofav(data) {
-            console.log(data.imdbID);
-          });
+    document
+      .getElementById(`plusBtn${currentMovie.imdbID}`)
+      .addEventListener("click", function addTofav(currentMovie) {
+        console.log(currentMovie.imdbID);
       });
   }
 }
