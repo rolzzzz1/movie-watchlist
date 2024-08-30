@@ -52,7 +52,7 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular">
+                <button class="plusBtn inter-regular" data-id=${data.imdbID}>
                   <img src="/img/plusIcon.png" /> Watchlist
                 </button>
               </div>
