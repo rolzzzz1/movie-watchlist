@@ -60,7 +60,7 @@ function populateMovie(mList) {
                 ${data.Plot}
               </p>
             </div>
-          </div>;
+          </div>
         `;
       });
   }
