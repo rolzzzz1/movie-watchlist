@@ -9,7 +9,7 @@ searchForm.addEventListener("submit", (event) => {
 });
 
 function handleSearch() {
-  fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value1}`)
+  fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
     .then((res) => {
       if (!res.ok) {
         throw Error("Something went wrong...");
