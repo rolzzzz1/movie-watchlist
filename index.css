@@ -196,6 +196,7 @@ header > img {
   border: none;
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .plusBtn > img {
