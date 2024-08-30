@@ -25,7 +25,7 @@ function populateMovie(mList) {
   console.log(mList);
 
   for (let movie in mList) {
-    let currentMovie = movies[movie];
+    let currentMovie = mList[movie];
     console.log(currentMovie);
     // movieList.innerHTML += `
     //   <div class="movieData">
