@@ -18,13 +18,13 @@ function handleSearch() {
 
   fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
     .then((res) => res.json())
-    .then((data) => populateMovie(data));
+    .then((data) => populateMovie(data.Search));
 }
 
-function populateMovie(movies) {
-  console.log(movies);
+function populateMovie(mList) {
+  console.log(mList);
 
-  for (let movie in movies) {
+  for (let movie in mList) {
     let currentMovie = movies[movie];
     console.log(currentMovie);
     // movieList.innerHTML += `
