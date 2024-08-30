@@ -65,3 +65,6 @@ function populateMovie(mList) {
       });
   }
 }
+
+let plusBtns = document.getElementsByClassName("plusBtn");
+console.log(plusBtns);
