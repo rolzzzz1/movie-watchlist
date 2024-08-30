@@ -16,7 +16,7 @@ searchForm.addEventListener("submit", (event) => {
 function handleSearch() {
   // fetch("https://www.omdbapi.com/?apikey=cddaec6f&t=blade+runner")
 
-  fetch(`https://www.omdbapi.com/?apikey=cddaec6f&t=${movieInput.value}`)
+  fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
     .then((res) => res.json())
     .then((data) => populateMovie(data));
 }
