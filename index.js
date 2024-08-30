@@ -34,10 +34,6 @@ function populateMovie(mList) {
       .then((data) => {
         console.log(data);
 
-        plusBtn.addEventListener("click", function addTofav(data) {
-          console.log(data.imdbID);
-        });
-
         movieList.innerHTML += `
           <div class="movieData">
             <img
@@ -68,6 +64,10 @@ function populateMovie(mList) {
             </div>
           </div>
         `;
+
+        plusBtn.addEventListener("click", function addTofav(data) {
+          console.log(data.imdbID);
+        });
       });
   }
 }
