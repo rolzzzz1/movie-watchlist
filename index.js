@@ -54,9 +54,7 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button id="plusBtn${
-                  data.imdbID
-                }" class="plusBtn inter-regular">
+                <button id="plusBtn" class="plusBtn inter-regular">
                   <img src="/img/plusIcon.png" /> Watchlist
                 </button>
               </div>
@@ -67,14 +65,10 @@ function populateMovie(mList) {
           </div>
         `;
       });
-
-    document
-      .getElementById(`plusBtn${currentMovie.imdbID}`)
-      .addEventListener("click", function addTofav(currentMovie) {
-        console.log(currentMovie.imdbID);
-      });
   }
 }
+
+let plusButtons = document.getElementById("plusBtn");
 
 /* <div class="movieData">
   <img
