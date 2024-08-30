@@ -70,7 +70,7 @@ function populateMovie(mList) {
         document
           .getElementById(`plusBtn${data.imdbID}`)
           .addEventListener("click", function addTofav(data) {
-            console.log(plusBtn.getAttribute("data-id"));
+            console.log(data.imdbID);
           });
       });
   }
