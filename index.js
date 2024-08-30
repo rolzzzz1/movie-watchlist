@@ -2,6 +2,7 @@
 const movieInput = document.getElementById("movieInput");
 const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
+const plusBtn = document.getElementById("plusBtn");
 
 // searchBtn.addEventListener("click", (event) => {
 //   event.preventDefault();
@@ -32,6 +33,11 @@ function populateMovie(mList) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+
+        plusBtn.addEventListener("click", function addTofav(data) {
+          console.log(data.imdbID);
+        });
+
         movieList.innerHTML += `
           <div class="movieData">
             <img
@@ -52,7 +58,7 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular">
+                <button id="plusBtn" class="plusBtn inter-regular">
                   <img src="/img/plusIcon.png" /> Watchlist
                 </button>
               </div>
