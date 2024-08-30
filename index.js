@@ -64,11 +64,11 @@ function populateMovie(mList) {
           </div>
         `;
       });
+
+    let plusButtons = document.querySelectorAll("plusBtn");
+    console.log(plusButtons);
   }
 }
-
-let plusButtons = document.querySelectorAll("plusBtn");
-console.log(plusButtons);
 
 // plusBtn.addEventListener("click", function handlePlusClick() {
 //   console.log(plusBtn.getAttribute("data-id"));
