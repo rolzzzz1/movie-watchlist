@@ -18,7 +18,7 @@ function handleSearch() {
       return res.json();
     })
     .then((data) => {
-      if (data.Response) {
+      if (data.Response === "True") {
         console.log("Response - " + data.Response);
         startExplore.classList.add("hidden");
         movieList.classList.remove("hidden");
