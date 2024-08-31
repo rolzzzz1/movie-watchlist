@@ -39,7 +39,7 @@ function handleSearch() {
       } else {
         console.log("Response - " + data.Response);
         // startExplore.classList.remove("hidden");
-        showStartExplore();
+        hideStartExplore();
         unableMsg.classList.remove("hidden");
         throw Error("Something went wrong...");
       }
