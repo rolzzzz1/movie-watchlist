@@ -16,7 +16,11 @@ function handleSearch() {
       }
       return res.json();
     })
-    .then((data) => populateMovie(data.Search))
+    .then((data) => {
+      startExplore.classList.add("hidden");
+      movieList.classList.remove("hidden");
+      populateMovie(data.Search);
+    })
     .catch((err) => console.log(err));
 }
 

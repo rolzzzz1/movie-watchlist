@@ -203,3 +203,7 @@ header > img {
 .plusBtn > img {
   margin-right: 8px;
 }
+
+.hidden {
+  display: none;
+}
