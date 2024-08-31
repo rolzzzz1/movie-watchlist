@@ -41,7 +41,6 @@ function handleSearch() {
         // startExplore.classList.remove("hidden");
         hideStartExplore();
         unableMsg.classList.remove("hidden");
-        throw Error("Something went wrong...");
       }
     })
     .catch((err) => {
