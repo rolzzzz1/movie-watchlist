@@ -10,13 +10,13 @@ searchForm.addEventListener("submit", (event) => {
 });
 
 function showStartExplore() {
-  if (startExplore.contains("hidden")) {
+  if (startExplore[0].contains("hidden")) {
     startExplore.remove("hidden");
   }
 }
 
 function hideStartExplore() {
-  if (!startExplore.contains("hidden")) {
+  if (!startExplore[0].contains("hidden")) {
     startExplore.add("hidden");
   }
 }
