@@ -25,13 +25,13 @@ function handleSearch() {
         populateMovie(data.Search);
       } else {
         console.log("Response - " + data.Response);
+        startExplore.classList.remove("hidden");
+        unableMsg.classList.remove("hidden");
         throw Error("Something went wrong...");
       }
     })
     .catch((err) => {
       console.log(err);
-      startExplore.classList.remove("hidden");
-      unableMsg.classList.remove("hidden");
     });
 }
 
