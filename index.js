@@ -18,9 +18,15 @@ function handleSearch() {
       return res.json();
     })
     .then((data) => {
-      startExplore.classList.add("hidden");
-      movieList.classList.remove("hidden");
-      populateMovie(data.Search);
+      if (data.Response) {
+        console.log("Response - " + data.Response);
+        startExplore.classList.add("hidden");
+        movieList.classList.remove("hidden");
+        populateMovie(data.Search);
+      } else {
+        console.log("Response - " + data.Response);
+        throw Error("Something went wrong...");
+      }
     })
     .catch((err) => {
       console.log(err);
