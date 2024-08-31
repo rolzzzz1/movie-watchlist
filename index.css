@@ -132,6 +132,11 @@ header > img {
   font-size: 18px;
 }
 
+.unable-msg {
+  color: #dfdddd;
+  font-size: 18px;
+}
+
 .movieList {
   margin: 40px 0;
 }
