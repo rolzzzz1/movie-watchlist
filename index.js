@@ -9,6 +9,18 @@ searchForm.addEventListener("submit", (event) => {
   handleSearch();
 });
 
+function showStartExplore() {
+  if (startExplore.contains("hidden")) {
+    startExplore.remove("hidden");
+  }
+}
+
+function hideStartExplore() {
+  if (!startExplore.contains("hidden")) {
+    startExplore.add("hidden");
+  }
+}
+
 function handleSearch() {
   fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
     .then((res) => {
@@ -20,12 +32,14 @@ function handleSearch() {
     .then((data) => {
       if (data.Response === "True") {
         console.log("Response - " + data.Response);
-        startExplore.classList.add("hidden");
+        // startExplore.classList.add("hidden");
+        hideStartExplore();
         movieList.classList.remove("hidden");
         populateMovie(data.Search);
       } else {
         console.log("Response - " + data.Response);
-        startExplore.classList.remove("hidden");
+        // startExplore.classList.remove("hidden");
+        showStartExplore();
         unableMsg.classList.remove("hidden");
         throw Error("Something went wrong...");
       }
