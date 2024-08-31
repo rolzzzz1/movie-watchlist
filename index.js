@@ -2,6 +2,7 @@ const movieInput = document.getElementById("movieInput");
 const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const startExplore = document.getElementById("startExplore");
+const unableMsg = document.getElementById("unable-msg");
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -21,7 +22,10 @@ function handleSearch() {
       movieList.classList.remove("hidden");
       populateMovie(data.Search);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+      unableMsg.classList.remove("hidden");
+    });
 }
 
 function populateMovie(mList) {
