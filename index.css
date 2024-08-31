@@ -133,6 +133,8 @@ header > img {
 }
 
 .unable-msg {
+  display: block;
+  margin: 0 auto;
   color: #dfdddd;
   font-size: 18px;
 }

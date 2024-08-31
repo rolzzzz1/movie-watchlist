@@ -10,14 +10,14 @@ searchForm.addEventListener("submit", (event) => {
 });
 
 function showStartExplore() {
-  if (startExplore[0].contains("hidden")) {
-    startExplore.remove("hidden");
+  if (startExplore.classList.contains("hidden")) {
+    startExplore.classList.remove("hidden");
   }
 }
 
 function hideStartExplore() {
-  if (!startExplore[0].contains("hidden")) {
-    startExplore.add("hidden");
+  if (!startExplore.classList.contains("hidden")) {
+    startExplore.classList.add("hidden");
   }
 }
 
