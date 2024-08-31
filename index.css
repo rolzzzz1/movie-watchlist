@@ -135,6 +135,7 @@ header > img {
 .unable-msg {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #dfdddd;
   font-size: 18px;
 }
