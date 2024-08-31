@@ -30,6 +30,7 @@ function handleSearch() {
     })
     .catch((err) => {
       console.log(err);
+      startExplore.classList.remove("hidden");
       unableMsg.classList.remove("hidden");
     });
 }
