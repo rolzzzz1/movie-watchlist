@@ -142,6 +142,10 @@ header > img {
   font-size: 18px;
 }
 
+.unable-msg > p {
+  padding: 5px;
+}
+
 .movieList {
   margin: 40px 0;
 }
