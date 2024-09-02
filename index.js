@@ -32,10 +32,15 @@ function handleSearch() {
     .then((data) => {
       if (data.Response === "True") {
         console.log("Response - " + data.Response);
-        // startExplore.classList.add("hidden");
-        hideStartExplore();
-        movieList.classList.remove("hidden");
-        populateMovie(data.Search);
+
+        if (!startExplore.classList.contains("hidden")) {
+          hideStartExplore();
+          movieList.classList.remove("hidden");
+          populateMovie(data.Search);
+        } else {
+          movieList.classList.remove("hidden");
+          populateMovie(data.Search);
+        }
       } else {
         console.log("Response - " + data.Response);
         // startExplore.classList.remove("hidden");
