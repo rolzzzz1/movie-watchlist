@@ -31,6 +31,7 @@ function handleSearch() {
     })
     .then((data) => {
       if (data.Response === "True") {
+        clearMovieList();
         console.log("Response - " + data.Response);
 
         if (!startExplore.classList.contains("hidden")) {
@@ -69,8 +70,6 @@ function populateMovie(mList) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-
-        clearMovieList();
 
         movieList.innerHTML += `
           <div class="movieData">
