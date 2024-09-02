@@ -40,6 +40,7 @@ function handleSearch() {
         console.log("Response - " + data.Response);
         // startExplore.classList.remove("hidden");
         hideStartExplore();
+        movieList.classList.add("hidden");
         unableMsg.classList.remove("hidden");
       }
     })
