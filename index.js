@@ -30,8 +30,8 @@ function handleSearch() {
       return res.json();
     })
     .then((data) => {
+      clearMovieList();
       if (data.Response === "True") {
-        clearMovieList();
         console.log("Response - " + data.Response);
 
         if (!startExplore.classList.contains("hidden")) {
@@ -44,10 +44,14 @@ function handleSearch() {
         }
       } else {
         console.log("Response - " + data.Response);
-        // startExplore.classList.remove("hidden");
-        hideStartExplore();
-        movieList.classList.add("hidden");
-        unableMsg.classList.remove("hidden");
+
+        if (!startExplore.classList.contains("hidden")) {
+          hideStartExplore();
+          unableMsg.classList.remove("hidden");
+          // movieList.classList.add("hidden");
+        } else {
+          unableMsg.classList.remove("hidden");
+        }
       }
     })
     .catch((err) => {
