@@ -54,6 +54,10 @@ function handleSearch() {
     });
 }
 
+function clearMovieList() {
+  movieList.innerHTML = "";
+}
+
 function populateMovie(mList) {
   console.log(mList);
 
@@ -65,6 +69,8 @@ function populateMovie(mList) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+
+        clearMovieList();
 
         movieList.innerHTML += `
           <div class="movieData">
