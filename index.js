@@ -41,7 +41,18 @@ function handleSearch() {
         if (!startExplore.classList.contains("hidden")) {
           hideStartExplore();
           movieList.classList.remove("hidden");
-          populateMovie(data.Search);
+
+          const initialSearchResults = data.Search;
+          const detailedSearchResults = Promise.allSettled(
+            initialSearchResults.map(
+              async (result) =>
+                await getCompleteFilmDetails(baseUrl, result.imdbID)
+            )
+          );
+
+          console.log(detailedSearchResults);
+
+          // populateMovie(data.Search);
         } else {
           movieList.classList.remove("hidden");
           populateMovie(data.Search);
@@ -66,6 +77,9 @@ function handleSearch() {
       console.log(err);
     });
 }
+
+// const initialSearchResults = data.Search;
+// const detailedSearchResults = await Promise.allSettled(initialSearchResults.map(async result => await getCompleteFilmDetails(baseUrl, result.imdbID)));
 
 function clearMovieList() {
   movieList.innerHTML = "";
