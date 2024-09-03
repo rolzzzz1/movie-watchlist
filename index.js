@@ -51,7 +51,7 @@ function handleSearch() {
 
           console.log(detailedSearchResults);
 
-          // populateMovie(data.Search);
+          populateMovie(data.Search);
         } else {
           movieList.classList.remove("hidden");
           populateMovie(data.Search);
