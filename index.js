@@ -94,6 +94,16 @@ async function getCompleteFilmDetails(imdbID) {
   }
 }
 
+movieList.addEventListener("click", (event) => {
+  const eventTarget = event.target;
+  const movieId = eventTarget.dataset.id;
+  console.log(movieId);
+});
+
+const clickedIcon = document.querySelector(
+  `.plusBtn > i[data-id="${likedButtonMediaId}"]`
+);
+
 // const initialSearchResults = data.Search;
 // const detailedSearchResults = await Promise.allSettled(initialSearchResults.map(async result => await getCompleteFilmDetails(baseUrl, result.imdbID)));
 
