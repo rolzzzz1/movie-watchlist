@@ -45,8 +45,7 @@ function handleSearch() {
           const initialSearchResults = data.Search;
           const detailedSearchResults = Promise.allSettled(
             initialSearchResults.map(
-              async (result) =>
-                await getCompleteFilmDetails(baseUrl, result.imdbID)
+              async (result) => await getCompleteFilmDetails(result.imdbID)
             )
           );
 
@@ -76,6 +75,23 @@ function handleSearch() {
     .catch((err) => {
       console.log(err);
     });
+}
+
+async function getCompleteFilmDetails(imdbID) {
+  const apiUrl = "https://www.omdbapi.com/?apikey=cddaec6f&" + `i=${imdbID}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = response.json();
+
+    if (data.Response === "False") {
+      throw new Error(`Could not get film details for search ID: ${imdbID}`);
+    }
+
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 // const initialSearchResults = data.Search;
