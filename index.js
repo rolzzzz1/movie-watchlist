@@ -100,9 +100,9 @@ movieList.addEventListener("click", (event) => {
   console.log(movieId);
 });
 
-const clickedIcon = document.querySelector(
-  `.plusBtn > i[data-id="${likedButtonMediaId}"]`
-);
+// const clickedIcon = document.querySelector(
+//   `.plusBtn > i[data-id="${likedButtonMediaId}"]`
+// );
 
 // const initialSearchResults = data.Search;
 // const detailedSearchResults = await Promise.allSettled(initialSearchResults.map(async result => await getCompleteFilmDetails(baseUrl, result.imdbID)));
