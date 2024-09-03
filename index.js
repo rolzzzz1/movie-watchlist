@@ -34,6 +34,10 @@ function handleSearch() {
       if (data.Response === "True") {
         console.log("Response - " + data.Response);
 
+        if (!unableMsg.classList.contains("hidden")) {
+          unableMsg.classList.add("hidden");
+        }
+
         if (!startExplore.classList.contains("hidden")) {
           hideStartExplore();
           movieList.classList.remove("hidden");
@@ -45,12 +49,16 @@ function handleSearch() {
       } else {
         console.log("Response - " + data.Response);
 
+        if (unableMsg.classList.contains("hidden")) {
+          unableMsg.classList.remove("hidden");
+        }
+
         if (!startExplore.classList.contains("hidden")) {
           hideStartExplore();
-          unableMsg.classList.remove("hidden");
+          // unableMsg.classList.remove("hidden");
           // movieList.classList.add("hidden");
         } else {
-          unableMsg.classList.remove("hidden");
+          // unableMsg.classList.remove("hidden");
         }
       }
     })
