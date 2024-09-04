@@ -48,3 +48,15 @@ function renderMyWatchlist() {
 }
 
 renderMyWatchlist();
+
+watchList.addEventListener("click", (event) => {
+  const eventTarget = event.target;
+
+  if (eventTarget.dataset.id) {
+    const movieId = eventTarget.dataset.id;
+    console.log(movieId);
+
+    myWatchlist.push(movieId);
+    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
+  }
+});
