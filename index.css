@@ -119,6 +119,7 @@ header > img {
 }
 
 .emptyWatchlist {
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
