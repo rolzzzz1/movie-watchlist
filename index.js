@@ -1,9 +1,10 @@
 const movieInput = document.getElementById("movieInput");
 const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
+const watchList = document.getElementById("watchList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
-let watchlist = [];
+let myWatchlist = [];
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -102,8 +103,8 @@ movieList.addEventListener("click", (event) => {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
 
-    watchlist.push(movieId);
-    localStorage.setItem("watchlist", JSON.stringify(watchlist));
+    myWatchlist.push(movieId);
+    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
 
@@ -165,3 +166,10 @@ function populateMovie(mList) {
       });
   }
 }
+
+function renderMyWatchlist() {
+  myWatchlist = localStorage.getItem("watchlist");
+  console.log(myWatchlist);
+}
+
+renderMyWatchlist();
