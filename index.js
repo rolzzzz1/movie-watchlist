@@ -97,8 +97,11 @@ async function getCompleteFilmDetails(imdbID) {
 movieList.addEventListener("click", (event) => {
   const eventTarget = event.target;
   console.log(eventTarget);
-  const movieId = eventTarget.dataset.id;
-  console.log(movieId);
+
+  if (eventTarget.dataset.id) {
+    const movieId = eventTarget.dataset.id;
+    console.log(movieId);
+  }
 });
 
 // const clickedIcon = document.querySelector(
@@ -159,6 +162,3 @@ function populateMovie(mList) {
       });
   }
 }
-
-let plusBtns = document.getElementsByClassName("plusBtn");
-console.log(plusBtns);
