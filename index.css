@@ -127,6 +127,8 @@ header > img {
 }
 
 .addMoviesMsg {
+  display: inline-flex;
+  align-items: center;
   font-size: 14px;
   color: #363636;
 }
