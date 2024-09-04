@@ -1,7 +1,6 @@
 const movieInput = document.getElementById("movieInput");
 const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
-const watchList = document.getElementById("watchList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
 let myWatchlist = [];
@@ -166,10 +165,3 @@ function populateMovie(mList) {
       });
   }
 }
-
-function renderMyWatchlist() {
-  myWatchlist = localStorage.getItem("watchlist");
-  console.log(myWatchlist);
-}
-
-renderMyWatchlist();
