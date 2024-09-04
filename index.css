@@ -126,6 +126,14 @@ header > img {
   align-items: center;
 }
 
+.emptyWatchlist > p {
+  margin: 0;
+}
+
+.emptyWatchlist > img {
+  padding-right: 5px;
+}
+
 .addMoviesMsg {
   display: inline-flex;
   align-items: center;
