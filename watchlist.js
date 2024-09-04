@@ -5,7 +5,7 @@ function renderMyWatchlist() {
   console.log(myWatchlist);
 
   for (let id in myWatchlist) {
-    console.log(id);
+    console.log(myWatchlist[id]);
   }
 }
 
