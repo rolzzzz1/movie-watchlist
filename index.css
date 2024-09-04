@@ -126,6 +126,11 @@ header > img {
   align-items: center;
 }
 
+.addMoviesMsg {
+  font-size: 14px;
+  color: #363636;
+}
+
 .startExplore {
   height: 70%;
   display: flex;
