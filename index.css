@@ -128,10 +128,7 @@ header > img {
 
 .emptyWatchlist > p {
   margin: 0;
-}
-
-.emptyWatchlist > img {
-  padding-right: 5px;
+  padding: 5px;
 }
 
 .addMoviesMsg {
@@ -139,6 +136,10 @@ header > img {
   align-items: center;
   font-size: 14px;
   color: #363636;
+}
+
+.addMoviesMsg > img {
+  padding-right: 5px;
 }
 
 .startExplore {
