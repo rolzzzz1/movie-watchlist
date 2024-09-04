@@ -96,6 +96,7 @@ async function getCompleteFilmDetails(imdbID) {
 
 movieList.addEventListener("click", (event) => {
   const eventTarget = event.target;
+  console.log(eventTarget);
   const movieId = eventTarget.dataset.id;
   console.log(movieId);
 });
