@@ -3,6 +3,7 @@ const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
+let watchlist = [];
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -96,11 +97,13 @@ async function getCompleteFilmDetails(imdbID) {
 
 movieList.addEventListener("click", (event) => {
   const eventTarget = event.target;
-  console.log(eventTarget);
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
+
+    watchlist.push(movieId);
+    localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }
 });
 
