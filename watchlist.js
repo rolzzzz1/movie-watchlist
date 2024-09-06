@@ -66,6 +66,8 @@ watchList.addEventListener("click", (event) => {
     console.log(index1);
     console.log(typeof index1);
 
+    delete myWatchlist[index1];
+
     const updatedObj = Object.fromEntries(
       Object.entries(myWatchlist).filter(([key]) => key !== index1)
     );
