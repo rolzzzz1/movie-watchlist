@@ -59,5 +59,7 @@ watchList.addEventListener("click", (event) => {
 
     let index1 = Object.values(myWatchlist).indexOf(movieId);
     delete myWatchlist[index1];
+
+    console.log(myWatchlist);
   }
 });
