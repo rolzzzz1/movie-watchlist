@@ -1,4 +1,5 @@
 const watchList = document.getElementById("watchList");
+let myWatchlist;
 
 function renderMyWatchlist() {
   myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -55,6 +56,12 @@ watchList.addEventListener("click", (event) => {
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
+
+    if (myWatchlist.contains(movieId)) {
+      console.log("it is already in mywatchlist");
+    } else {
+      console.log("It is not in my watchlist");
+    }
 
     myWatchlist.push(movieId);
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
