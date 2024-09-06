@@ -56,14 +56,11 @@ watchList.addEventListener("click", (event) => {
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
-    console.log(Object.values(myWatchlist).includes(movieId));
-    if (myWatchlist.contains(movieId)) {
+    console.log(myWatchlist);
+    if (Object.values(myWatchlist).includes(movieId)) {
       console.log("it is in mywatchlist");
     } else {
       console.log("It is not in my watchlist");
     }
-
-    myWatchlist.push(movieId);
-    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
