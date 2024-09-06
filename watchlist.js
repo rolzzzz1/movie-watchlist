@@ -59,6 +59,10 @@ watchList.addEventListener("click", (event) => {
     console.log(myWatchlist);
     if (Object.values(myWatchlist).includes(movieId)) {
       console.log("it is in mywatchlist");
+      for (let i in myWatchlist) {
+        console.log("Index - " + i);
+        console.log("Value - " + myWatchlist[i]);
+      }
     } else {
       console.log("It is not in my watchlist");
     }
