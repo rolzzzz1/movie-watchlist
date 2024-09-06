@@ -57,6 +57,10 @@ watchList.addEventListener("click", (event) => {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
     console.log(myWatchlist);
+
+    let prop = Object.filter(myWatchlist, (movie) => console.log(movie));
+    console.log(prop);
+
     if (Object.values(myWatchlist).includes(movieId)) {
       console.log("it is in mywatchlist");
       for (let i in myWatchlist) {
