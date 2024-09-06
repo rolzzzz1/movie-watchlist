@@ -60,8 +60,8 @@ watchList.addEventListener("click", (event) => {
 
     let arr = Object.values(myWatchlist);
     console.log(arr);
-    let index1 = arr.indexOf(movieId);
-    delete myWatchlist("0");
+    let index1 = `"${arr.indexOf(movieId)}"`;
+    delete myWatchlist(index1);
 
     if (Object.values(myWatchlist).includes(movieId)) {
       console.log("it is in mywatchlist");
