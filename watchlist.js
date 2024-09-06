@@ -58,9 +58,9 @@ watchList.addEventListener("click", (event) => {
     console.log(movieId);
     console.log(myWatchlist);
 
-    let arr = Object.entries(myWatchlist);
+    let arr = Object.values(myWatchlist);
     console.log(arr);
-    console.log(arr.includes(movieId));
+    console.log(arr.indexOf(movieId));
 
     if (Object.values(myWatchlist).includes(movieId)) {
       console.log("it is in mywatchlist");
