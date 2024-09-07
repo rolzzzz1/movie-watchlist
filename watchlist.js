@@ -32,10 +32,12 @@ function renderMyWatchlist() {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${data.imdbID}>
+                <button class="plusBtn inter-regular" data-id=${
+                  data.imdbID
+                } data-name=${data.Title}>
                   <img src="/img/removeIcon.png" data-id=${
                     data.imdbID
-                  } /> Remove
+                  } data-name=${data.Title} /> Remove
                 </button>
               </div>
               <p class="inter-regular">
@@ -55,7 +57,9 @@ watchList.addEventListener("click", (event) => {
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
+    const movieTitle = eventTarget.dataset.name;
     console.log(movieId);
+    console.log(movieTitle);
 
     let index1 = Object.values(myWatchlist).indexOf(movieId);
     delete myWatchlist[index1];

@@ -100,9 +100,11 @@ movieList.addEventListener("click", (event) => {
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
+    const movieTitle = eventTarget.dataset.name;
     console.log(movieId);
+    console.log(movieTitle);
 
-    myWatchlist.push(movieId);
+    myWatchlist.push({ movieId: movieTitle });
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
@@ -150,10 +152,12 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${data.imdbID}>
+                <button class="plusBtn inter-regular" data-id=${
+                  data.imdbID
+                } data-name=${data.Title}>
                   <img src="/img/plusIcon.png" data-id=${
                     data.imdbID
-                  } /> Watchlist
+                  } data-name=${data.Title} /> Watchlist
                 </button>
               </div>
               <p class="inter-regular">
