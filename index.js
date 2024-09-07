@@ -3,7 +3,7 @@ const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
-let myWatchlist = [];
+let myWatchlist = {};
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -104,9 +104,9 @@ movieList.addEventListener("click", (event) => {
     console.log(movieId);
     console.log(movieTitle);
 
-    myWatchlist[movieId] = movieTitle;
+    myWatchlist.movieId = movieTitle;
     console.log(myWatchlist);
-    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
+    // localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
 
