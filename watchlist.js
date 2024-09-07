@@ -14,10 +14,10 @@ function renderMyWatchlist() {
   // let movie = myWatchlist.find((movie) => movie.id === "tt1856101");
   // console.log(movie);
 
-  for (let index in myWatchlist) {
-    console.log(myWatchlist.id);
+  for (let item in myWatchlist) {
+    console.log(myWatchlist[item].id);
 
-    fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${myWatchlist.id}`)
+    fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${myWatchlist[item].id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
