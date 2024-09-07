@@ -5,6 +5,12 @@ function renderMyWatchlist() {
   myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
   console.log(myWatchlist);
 
+  for (let item in myWatchlist) {
+    console.log(item);
+    console.log(myWatchlist[item]);
+    console.log(myWatchlist[item].id);
+  }
+
   // let movie = myWatchlist.find((movie) => movie.id === "tt1856101");
   // console.log(movie);
 
