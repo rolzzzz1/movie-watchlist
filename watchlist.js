@@ -7,6 +7,7 @@ function renderMyWatchlist() {
 
   if (Object.keys(myWatchlist).length === 0) {
     console.log("Object is empty");
+    watchList.innerHTML = "";
   } else {
     console.log("Not empty");
     for (let item in myWatchlist) {
