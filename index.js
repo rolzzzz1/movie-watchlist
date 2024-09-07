@@ -3,7 +3,7 @@ const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
-let myWatchlist = {};
+let myWatchlist = [];
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -97,16 +97,13 @@ async function getCompleteFilmDetails(imdbID) {
 
 movieList.addEventListener("click", (event) => {
   const eventTarget = event.target;
-  console.log(eventTarget);
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
-    const movieTitle = eventTarget.dataset.name;
     console.log(movieId);
-    console.log(movieTitle);
 
-    myWatchlist[`${movieId}`] = movieTitle;
+    myWatchlist.push(movieId);
     console.log(myWatchlist);
-    // localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
+    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
 
@@ -153,12 +150,10 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${
-                  data.imdbID
-                } data-name=${data.Title}>
+                <button class="plusBtn inter-regular" data-id=${data.imdbID} >
                   <img src="/img/plusIcon.png" data-id=${
                     data.imdbID
-                  } data-name=${data.Title} /> Watchlist
+                  }  /> Watchlist
                 </button>
               </div>
               <p class="inter-regular">

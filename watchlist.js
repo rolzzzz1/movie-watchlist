@@ -32,12 +32,10 @@ function renderMyWatchlist() {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${
-                  data.imdbID
-                } data-name=${data.Title}>
+                <button class="plusBtn inter-regular" data-id=${data.imdbID} >
                   <img src="/img/removeIcon.png" data-id=${
                     data.imdbID
-                  } data-name=${data.Title} /> Remove
+                  }  /> Remove
                 </button>
               </div>
               <p class="inter-regular">
