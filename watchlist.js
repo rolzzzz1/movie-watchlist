@@ -56,12 +56,7 @@ watchList.addEventListener("click", (event) => {
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
-    const movieTitle = eventTarget.dataset.name;
     console.log(movieId);
-    console.log(movieTitle);
-
-    let index1 = Object.values(myWatchlist).indexOf(movieId);
-    delete myWatchlist[index1];
 
     console.log(myWatchlist);
   }
