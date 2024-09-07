@@ -60,5 +60,9 @@ watchList.addEventListener("click", (event) => {
 
     console.log(myWatchlist);
     console.log(typeof myWatchlist);
+    console.log(Object.keys(myWatchlist));
+    console.log(typeof Object.keys(myWatchlist));
+    console.log(Object.values(myWatchlist));
+    console.log(typeof Object.values(myWatchlist));
   }
 });
