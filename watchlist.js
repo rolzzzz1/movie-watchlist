@@ -59,5 +59,6 @@ watchList.addEventListener("click", (event) => {
     console.log(movieId);
 
     console.log(myWatchlist);
+    console.log(typeof myWatchlist);
   }
 });
