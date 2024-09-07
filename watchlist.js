@@ -8,6 +8,9 @@ function renderMyWatchlist() {
   let movie = myWatchlist.find((movie) => movie.id === "tt1856101");
   console.log(movie);
 
+  myWatchlist = myWatchlist.filter((item) => item.id !== "tt1856101");
+  console.log(myWatchlist);
+
   for (let index in myWatchlist) {
     console.log(myWatchlist[index]);
 
