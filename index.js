@@ -101,7 +101,11 @@ movieList.addEventListener("click", (event) => {
     const movieId = eventTarget.dataset.id;
     console.log(movieId);
 
-    myWatchlist.push(movieId);
+    let obj = {
+      id: movieId,
+    };
+
+    myWatchlist.push(obj);
     console.log(myWatchlist);
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
