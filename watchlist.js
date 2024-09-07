@@ -54,6 +54,7 @@ renderMyWatchlist();
 
 watchList.addEventListener("click", (event) => {
   const eventTarget = event.target;
+  console.log(eventTarget);
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
