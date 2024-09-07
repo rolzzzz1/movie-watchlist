@@ -71,6 +71,7 @@ watchList.addEventListener("click", (event) => {
     myWatchlist = myWatchlist.filter((item) => item.id !== movieId);
     console.log(myWatchlist);
 
+    localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
     renderMyWatchlist();
   }
 });
