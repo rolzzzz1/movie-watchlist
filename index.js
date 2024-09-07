@@ -104,7 +104,7 @@ movieList.addEventListener("click", (event) => {
     console.log(movieId);
     console.log(movieTitle);
 
-    myWatchlist.movieId = movieTitle;
+    myWatchlist[`${movieId}`] = movieTitle;
     console.log(myWatchlist);
     // localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
