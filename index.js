@@ -102,7 +102,7 @@ movieList.addEventListener("click", (event) => {
     };
 
     myWatchlist.push(obj);
-    // console.log(myWatchlist);
+    console.log(myWatchlist);
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
