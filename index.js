@@ -33,7 +33,7 @@ function handleSearch() {
     .then((data) => {
       clearMovieList();
       if (data.Response === "True") {
-        console.log("Response - " + data.Response);
+        // console.log("Response - " + data.Response);
 
         if (!unableMsg.classList.contains("hidden")) {
           unableMsg.classList.add("hidden");
@@ -58,7 +58,7 @@ function handleSearch() {
           populateMovie(data.Search);
         }
       } else {
-        console.log("Response - " + data.Response);
+        // console.log("Response - " + data.Response);
 
         if (unableMsg.classList.contains("hidden")) {
           unableMsg.classList.remove("hidden");
@@ -66,10 +66,6 @@ function handleSearch() {
 
         if (!startExplore.classList.contains("hidden")) {
           hideStartExplore();
-          // unableMsg.classList.remove("hidden");
-          // movieList.classList.add("hidden");
-        } else {
-          // unableMsg.classList.remove("hidden");
         }
       }
     })
@@ -99,40 +95,40 @@ movieList.addEventListener("click", (event) => {
   const eventTarget = event.target;
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
-    console.log(movieId);
+    // console.log(movieId);
 
     let obj = {
       id: movieId,
     };
 
     myWatchlist.push(obj);
-    console.log(myWatchlist);
+    // console.log(myWatchlist);
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
   }
 });
-
-// const clickedIcon = document.querySelector(
-//   `.plusBtn > i[data-id="${likedButtonMediaId}"]`
-// );
-
-// const initialSearchResults = data.Search;
-// const detailedSearchResults = await Promise.allSettled(initialSearchResults.map(async result => await getCompleteFilmDetails(baseUrl, result.imdbID)));
 
 function clearMovieList() {
   movieList.innerHTML = "";
 }
 
 function populateMovie(mList) {
-  console.log(mList);
+  // console.log(mList);
+
+  let storedWatchlist = JSON.parse(localStorage.getItem("watchlist"));
+  console.log(storedWatchlist);
+  let storedWatchlist1 = storedWatchlist.filter(
+    (item) => item.id === "tt0475723"
+  );
+  console.log(storedWatchlist1);
 
   for (let movie in mList) {
     let currentMovie = mList[movie];
-    console.log(currentMovie.imdbID);
+    // console.log(currentMovie.imdbID);
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
 
         movieList.innerHTML += `
           <div class="movieData">

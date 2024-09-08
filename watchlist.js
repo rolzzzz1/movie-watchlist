@@ -3,14 +3,14 @@ let myWatchlist;
 
 function renderMyWatchlist() {
   myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
-  console.log(myWatchlist);
+  // console.log(myWatchlist);
   watchList.innerHTML = "";
   if (Object.keys(myWatchlist).length === 0) {
-    console.log("Object is empty");
+    // console.log("Object is empty");
   } else {
-    console.log("Not empty");
+    // console.log("Not empty");
     for (let item in myWatchlist) {
-      console.log(myWatchlist[item].id);
+      // console.log(myWatchlist[item].id);
 
       fetch(
         `https://www.omdbapi.com/?apikey=cddaec6f&i=${myWatchlist[item].id}`
@@ -60,14 +60,14 @@ renderMyWatchlist();
 
 watchList.addEventListener("click", (event) => {
   const eventTarget = event.target;
-  console.log(eventTarget);
+  // console.log(eventTarget);
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
-    console.log(movieId);
+    // console.log(movieId);
 
     myWatchlist = myWatchlist.filter((item) => item.id !== movieId);
-    console.log(myWatchlist);
+    // console.log(myWatchlist);
 
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
     renderMyWatchlist();
