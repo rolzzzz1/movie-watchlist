@@ -3,7 +3,7 @@ const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const startExplore = document.getElementById("startExplore");
 const unableMsg = document.getElementById("unable-msg");
-let myWatchlist = [];
+let myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
