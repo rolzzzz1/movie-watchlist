@@ -137,13 +137,14 @@ function populateMovie(mList) {
 
     console.log(isAlreadyWatchlist);
 
+    let plusBtns = document.getElementsByClassName("plusBtn");
+    console.log(plusBtns);
+    console.log(plusBtns[0]);
+    plusBtns[0].setAttribute("disabled", true);
+
     if (isAlreadyWatchlist) {
       console.log("valid");
       // document.getElementById("plusBtn").disabled = true;
-      let plusBtns = document.getElementsByClassName("plusBtn");
-      console.log(plusBtns);
-      console.log(plusBtns[0]);
-      plusBtns[0].setAttribute("disabled", true);
     }
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
