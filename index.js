@@ -184,7 +184,7 @@ function populateMovie(mList) {
           // document.getElementById(currentMovie.imdbID).disabled = true;
           document.getElementById(
             currentMovie.imdbID
-          ).innerHTML = `Already in watchlist`;
+          ).innerHTML = `<p class="watchlistMsg">Already in watchlist</p>`;
         }
       });
   }

@@ -246,3 +246,8 @@ header > img {
 .hidden {
   display: none;
 }
+
+.watchlistMsg {
+  font-size: 10px;
+  color: #7f7f7f;
+}
