@@ -1,4 +1,5 @@
 const watchList = document.getElementById("watchList");
+const emptyWatchlist = document.getElementById("emptyWatchlist");
 let myWatchlist;
 
 function renderMyWatchlist() {
@@ -12,6 +13,8 @@ function renderMyWatchlist() {
     // console.log("Not empty");
     for (let item in myWatchlist) {
       // console.log(myWatchlist[item].id);
+
+      emptyWatchlist.classList.add("hidden");
 
       fetch(
         `https://www.omdbapi.com/?apikey=cddaec6f&i=${myWatchlist[item].id}`
