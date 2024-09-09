@@ -253,4 +253,5 @@ header > img {
   display: inline-flex;
   align-items: center;
   margin: 0;
+  cursor: none;
 }
