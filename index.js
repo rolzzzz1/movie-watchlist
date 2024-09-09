@@ -114,12 +114,12 @@ function clearMovieList() {
 function populateMovie(mList) {
   // console.log(mList);
 
-  let storedWatchlist = JSON.parse(localStorage.getItem("watchlist"));
-  console.log(storedWatchlist);
-  let storedWatchlist1 = storedWatchlist.filter(
-    (item) => item.id === "tt0475723"
-  );
-  console.log(storedWatchlist1);
+  // let storedWatchlist = JSON.parse(localStorage.getItem("watchlist"));
+  // console.log(storedWatchlist);
+  // let storedWatchlist1 = storedWatchlist.filter(
+  //   (item) => item.id === "tt0475723"
+  // );
+  // console.log(storedWatchlist1);
 
   for (let movie in mList) {
     let currentMovie = mList[movie];
