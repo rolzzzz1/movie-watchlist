@@ -181,7 +181,10 @@ function populateMovie(mList) {
 
         if (isAlreadyWatchlist) {
           console.log("valid");
-          document.getElementById(currentMovie.imdbID).disabled = true;
+          // document.getElementById(currentMovie.imdbID).disabled = true;
+          document.getElementById(
+            currentMovie.imdbID
+          ).innerHTML = `Already in watchlist`;
         }
       });
   }
