@@ -137,9 +137,12 @@ function populateMovie(mList) {
 
     console.log(isAlreadyWatchlist);
 
+    let isAddBtnDisable = false;
+
     if (isAlreadyWatchlist) {
       console.log("valid");
-      document.getElementById("plusBtn").disabled = true;
+      // document.getElementById("plusBtn").disabled = true;
+      let isAddBtnDisable = true;
     }
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
@@ -167,7 +170,9 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${data.imdbID} >
+                <button class="plusBtn inter-regular" data-id=${
+                  data.imdbID
+                } disabled=${isAddBtnDisable}>
                   <img src="/img/plusIcon.png" data-id=${
                     data.imdbID
                   }  /> Watchlist
