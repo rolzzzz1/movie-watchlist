@@ -142,7 +142,7 @@ function populateMovie(mList) {
     if (isAlreadyWatchlist) {
       console.log("valid");
       // document.getElementById("plusBtn").disabled = true;
-      let isAddBtnDisable = true;
+      isAddBtnDisable = true;
     }
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
