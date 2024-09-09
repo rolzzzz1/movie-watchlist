@@ -127,6 +127,10 @@ function populateMovie(mList) {
   // );
   // console.log(storedWatchlist1);
 
+  let plusBtns = document.getElementsByClassName("plusBtn");
+  console.log(plusBtns);
+  console.log(plusBtns[0]);
+
   for (let movie in mList) {
     let currentMovie = mList[movie];
     // console.log(currentMovie.imdbID);
@@ -137,9 +141,6 @@ function populateMovie(mList) {
 
     console.log(isAlreadyWatchlist);
 
-    let plusBtns = document.getElementsByClassName("plusBtn");
-    console.log(plusBtns);
-    console.log(plusBtns["0"]);
     // plusBtns[0].setAttribute("disabled", true);
 
     if (isAlreadyWatchlist) {
