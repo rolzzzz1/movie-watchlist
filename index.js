@@ -117,8 +117,11 @@ function clearMovieList() {
 function populateMovie(mList) {
   // console.log(mList);
 
-  // let storedWatchlist = JSON.parse(localStorage.getItem("watchlist"));
-  // console.log(storedWatchlist);
+  let storedWatchlist =
+    localStorage.getItem("watchlist") == null
+      ? []
+      : JSON.parse(localStorage.getItem("watchlist"));
+  console.log(storedWatchlist);
   // let storedWatchlist1 = storedWatchlist.filter(
   //   (item) => item.id === "tt0475723"
   // );
@@ -127,6 +130,12 @@ function populateMovie(mList) {
   for (let movie in mList) {
     let currentMovie = mList[movie];
     // console.log(currentMovie.imdbID);
+
+    let isAlreadyWatchlist = storedWatchlist.find(
+      (e) => e.id === currentMovie.imdbID
+    );
+
+    console.log(isAlreadyWatchlist);
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
       .then((res) => res.json())
