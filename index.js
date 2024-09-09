@@ -139,11 +139,6 @@ function populateMovie(mList) {
 
     // plusBtns[0].setAttribute("disabled", true);
 
-    if (isAlreadyWatchlist) {
-      console.log("valid");
-      document.getElementById(currentMovie.imdbID).disabled = true;
-    }
-
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
       .then((res) => res.json())
       .then((data) => {
@@ -183,6 +178,11 @@ function populateMovie(mList) {
             </div>
           </div>
         `;
+
+        if (isAlreadyWatchlist) {
+          console.log("valid");
+          document.getElementById(currentMovie.imdbID).disabled = true;
+        }
       });
   }
 }
