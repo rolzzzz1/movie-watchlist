@@ -114,10 +114,6 @@ function clearMovieList() {
   movieList.innerHTML = "";
 }
 
-let plusBtns = document.getElementsByClassName("plusBtn");
-console.log(plusBtns);
-plusBtns[0].setAttribute("disabled", true);
-
 function populateMovie(mList) {
   // console.log(mList);
 
@@ -145,7 +141,7 @@ function populateMovie(mList) {
 
     if (isAlreadyWatchlist) {
       console.log("valid");
-      // document.getElementById("plusBtn").disabled = true;
+      document.getElementById(currentMovie.imdbID).disabled = true;
     }
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
@@ -173,7 +169,9 @@ function populateMovie(mList) {
               <div class="movieData-middle">
                 <p class="inter-regular">${data.Runtime}</p>
                 <p class="inter-regular">${data.Genre}</p>
-                <button class="plusBtn inter-regular" data-id=${data.imdbID}>
+                <button class="plusBtn inter-regular" id=${
+                  data.imdbID
+                } data-id=${data.imdbID}>
                   <img src="/img/plusIcon.png" data-id=${
                     data.imdbID
                   }  /> Watchlist
