@@ -114,6 +114,10 @@ function clearMovieList() {
   movieList.innerHTML = "";
 }
 
+let plusBtns = document.getElementsByClassName("plusBtn");
+console.log(plusBtns);
+console.log(plusBtns[0].setAttribute("disabled", true));
+
 function populateMovie(mList) {
   // console.log(mList);
 
@@ -126,10 +130,6 @@ function populateMovie(mList) {
   //   (item) => item.id === "tt0475723"
   // );
   // console.log(storedWatchlist1);
-
-  let plusBtns = document.getElementsByClassName("plusBtn");
-  console.log(plusBtns);
-  console.log(plusBtns[0]);
 
   for (let movie in mList) {
     let currentMovie = mList[movie];
