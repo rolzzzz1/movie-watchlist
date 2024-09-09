@@ -250,4 +250,6 @@ header > img {
 .watchlistMsg {
   font-size: 14px;
   color: #7f7f7f;
+  display: inline-flex;
+  align-items: center;
 }
