@@ -104,6 +104,10 @@ movieList.addEventListener("click", (event) => {
       id: movieId,
     };
 
+    document.getElementById(
+      movieId
+    ).innerHTML = `<p class="watchlistMsg">Already added</p>`;
+
     myWatchlist.push(obj);
     console.log(myWatchlist);
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
