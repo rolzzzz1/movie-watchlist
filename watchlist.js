@@ -9,6 +9,9 @@ function renderMyWatchlist() {
 
   if (Object.keys(myWatchlist).length === 0) {
     // console.log("Object is empty");
+    if (emptyWatchlist.classList.contains("hidden")) {
+      emptyWatchlist.classList.remove("hidden");
+    }
   } else {
     // console.log("Not empty");
     for (let item in myWatchlist) {
