@@ -140,7 +140,7 @@ function populateMovie(mList) {
     if (isAlreadyWatchlist) {
       console.log("valid");
       // document.getElementById("plusBtn").disabled = true;
-      let plusBtns = document.getElementById("plusBtn");
+      let plusBtns = document.getElementsByClassName("plusBtn");
       console.log(plusBtns);
     }
 
