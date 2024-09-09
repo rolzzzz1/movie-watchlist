@@ -137,6 +137,11 @@ function populateMovie(mList) {
 
     console.log(isAlreadyWatchlist);
 
+    if (isAlreadyWatchlist) {
+      console.log("valid");
+      document.getElementById("plusBtn").disabled = true;
+    }
+
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
       .then((res) => res.json())
       .then((data) => {
