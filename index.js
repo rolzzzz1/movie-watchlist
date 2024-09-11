@@ -104,11 +104,12 @@ movieList.addEventListener("click", (event) => {
       id: movieId,
     };
 
-    // document.getElementById(
-    //   movieId
-    // ).innerHTML = `<p class="watchlistMsg">Already added</p>`;
-
     document.getElementById(movieId).disabled = "disabled";
+
+    document.getElementById(
+      movieId
+    ).innerHTML = `<p class="watchlistMsg">Added</p>`;
+
     // document.getElementById(movieId).disabled = "";
 
     myWatchlist.push(obj);
@@ -191,7 +192,7 @@ function populateMovie(mList) {
           document.getElementById(currentMovie.imdbID).disabled = "disabled";
           document.getElementById(
             currentMovie.imdbID
-          ).innerHTML = `<p class="watchlistMsg">Already added</p>`;
+          ).innerHTML = `<p class="watchlistMsg">Added</p>`;
         }
       });
   }
