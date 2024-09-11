@@ -109,6 +109,7 @@ movieList.addEventListener("click", (event) => {
     // ).innerHTML = `<p class="watchlistMsg">Already added</p>`;
 
     document.getElementById(movieId).disabled = "disabled";
+    document.getElementById(movieId).disabled = "";
 
     myWatchlist.push(obj);
     console.log(myWatchlist);
