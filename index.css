@@ -136,6 +136,7 @@ header > img {
   align-items: center;
   font-size: 14px;
   color: #363636;
+  text-decoration: none;
 }
 
 .addMoviesMsg > img {
