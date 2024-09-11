@@ -5,6 +5,8 @@ body {
   height: 100vh;
   max-height: 780px;
   max-width: 550px;
+  border: black 5px solid;
+  border-radius: 5px;
 }
 
 /* FONTS */
