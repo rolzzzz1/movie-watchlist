@@ -255,3 +255,7 @@ header > img {
   margin: 0;
   cursor: context-menu;
 }
+
+button:disabled {
+  cursor: context-menu;
+}
