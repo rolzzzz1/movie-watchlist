@@ -146,7 +146,7 @@ header > img {
 }
 
 .startExplore {
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +170,7 @@ header > img {
 }
 
 .unable-msg {
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
