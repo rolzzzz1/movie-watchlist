@@ -26,6 +26,7 @@ function hideStartExplore() {
 }
 
 function handleSearch() {
+  console.log(movieInput);
   if (movieInput === "") {
     console.log("Please enter a movie");
   }
