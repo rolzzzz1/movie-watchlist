@@ -43,6 +43,9 @@ function handleSearch() {
       })
       .then((data) => {
         clearMovieList();
+        if (!emptyMsg.classList.contains("hidden")) {
+          emptyMsg.classList.add("hidden");
+        }
         if (data.Response === "True") {
           // console.log("Response - " + data.Response);
 
