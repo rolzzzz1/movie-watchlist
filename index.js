@@ -30,6 +30,7 @@ function handleSearch() {
   // console.log(movieInput.value);
   if (movieInput.value === "") {
     console.log("Please enter a movie");
+    clearMovieList();
     if (emptyMsg.classList.contains("hidden")) {
       emptyMsg.classList.remove("hidden");
     }
