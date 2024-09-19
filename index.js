@@ -26,60 +26,60 @@ function hideStartExplore() {
 }
 
 function handleSearch() {
-  console.log(movieInput.value);
+  // console.log(movieInput.value);
   if (movieInput.value === "") {
     console.log("Please enter a movie");
-  }
-
-  fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
-    .then((res) => {
-      if (!res.ok) {
-        throw Error("Something went wrong...");
-      }
-      return res.json();
-    })
-    .then((data) => {
-      clearMovieList();
-      if (data.Response === "True") {
-        // console.log("Response - " + data.Response);
-
-        if (!unableMsg.classList.contains("hidden")) {
-          unableMsg.classList.add("hidden");
+  } else {
+    fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Something went wrong...");
         }
+        return res.json();
+      })
+      .then((data) => {
+        clearMovieList();
+        if (data.Response === "True") {
+          // console.log("Response - " + data.Response);
 
-        if (!startExplore.classList.contains("hidden")) {
-          hideStartExplore();
-          movieList.classList.remove("hidden");
+          if (!unableMsg.classList.contains("hidden")) {
+            unableMsg.classList.add("hidden");
+          }
 
-          const initialSearchResults = data.Search;
-          const detailedSearchResults = Promise.allSettled(
-            initialSearchResults.map(
-              async (result) => await getCompleteFilmDetails(result.imdbID)
-            )
-          );
+          if (!startExplore.classList.contains("hidden")) {
+            hideStartExplore();
+            movieList.classList.remove("hidden");
 
-          console.log(detailedSearchResults);
+            const initialSearchResults = data.Search;
+            const detailedSearchResults = Promise.allSettled(
+              initialSearchResults.map(
+                async (result) => await getCompleteFilmDetails(result.imdbID)
+              )
+            );
 
-          populateMovie(data.Search);
+            console.log(detailedSearchResults);
+
+            populateMovie(data.Search);
+          } else {
+            movieList.classList.remove("hidden");
+            populateMovie(data.Search);
+          }
         } else {
-          movieList.classList.remove("hidden");
-          populateMovie(data.Search);
-        }
-      } else {
-        // console.log("Response - " + data.Response);
+          // console.log("Response - " + data.Response);
 
-        if (unableMsg.classList.contains("hidden")) {
-          unableMsg.classList.remove("hidden");
-        }
+          if (unableMsg.classList.contains("hidden")) {
+            unableMsg.classList.remove("hidden");
+          }
 
-        if (!startExplore.classList.contains("hidden")) {
-          hideStartExplore();
+          if (!startExplore.classList.contains("hidden")) {
+            hideStartExplore();
+          }
         }
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 }
 
 async function getCompleteFilmDetails(imdbID) {
