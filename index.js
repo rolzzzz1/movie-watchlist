@@ -34,6 +34,14 @@ function handleSearch() {
     if (emptyMsg.classList.contains("hidden")) {
       emptyMsg.classList.remove("hidden");
     }
+
+    if (!unableMsg.classList.contains("hidden")) {
+      unableMsg.classList.add("hidden");
+    }
+
+    if (!startExplore.classList.contains("hidden")) {
+      hideStartExplore();
+    }
   } else {
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
       .then((res) => {
