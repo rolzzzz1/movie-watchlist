@@ -26,6 +26,10 @@ function hideStartExplore() {
 }
 
 function handleSearch() {
+  if (movieInput === "") {
+    console.log("Please enter a movie");
+  }
+
   fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
     .then((res) => {
       if (!res.ok) {
