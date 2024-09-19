@@ -159,6 +159,16 @@ header > img {
   font-size: 18px;
 }
 
+.empty-msg {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #dfdddd;
+  font-size: 18px;
+}
+
 .unable-msg {
   height: 70%;
   display: flex;
