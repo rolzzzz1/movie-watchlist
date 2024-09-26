@@ -24,9 +24,9 @@ function handleSearch() {
 
     showUnableMsg();
 
-    if (!startExplore.classList.contains("hidden")) {
-      hideStartExplore();
-    }
+    // if (!startExplore.classList.contains("hidden")) {
+    //   hideStartExplore();
+    // }
   } else {
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
       .then((res) => {
