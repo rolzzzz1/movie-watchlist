@@ -24,6 +24,7 @@ function handleSearch() {
 
     showUnableMsg();
 
+    hideStartExplore();
     // if (!startExplore.classList.contains("hidden")) {
     //   hideStartExplore();
     // }
