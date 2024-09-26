@@ -5,8 +5,6 @@ body {
   height: 100vh;
   max-height: 780px;
   max-width: 550px;
-  /* border: black 3px solid; */
-  /* border-radius: 5px; */
 }
 
 /* FONTS */
@@ -62,7 +60,6 @@ header > img {
   width: 100%;
   position: absolute;
   top: 50%;
-  /* left: 10%; */
   transform: translate(0, -50%);
 }
 
@@ -160,7 +157,6 @@ header > img {
 }
 
 .empty-msg {
-  /* height: 70%; */
   display: flex;
   flex-direction: column;
   justify-content: center;

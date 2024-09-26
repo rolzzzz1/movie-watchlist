@@ -2,21 +2,17 @@ const watchList = document.getElementById("watchList");
 const emptyWatchlist = document.getElementById("emptyWatchlist");
 let myWatchlist;
 
+// Rendering my watchlist
 function renderMyWatchlist() {
   myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
-  // console.log(myWatchlist);
   watchList.innerHTML = "";
 
   if (Object.keys(myWatchlist).length === 0) {
-    // console.log("Object is empty");
     if (emptyWatchlist.classList.contains("hidden")) {
       emptyWatchlist.classList.remove("hidden");
     }
   } else {
-    // console.log("Not empty");
     for (let item in myWatchlist) {
-      // console.log(myWatchlist[item].id);
-
       emptyWatchlist.classList.add("hidden");
 
       fetch(
@@ -24,8 +20,6 @@ function renderMyWatchlist() {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
-
           watchList.innerHTML += `
             <div class="movieData">
               <img
@@ -65,16 +59,14 @@ function renderMyWatchlist() {
 
 renderMyWatchlist();
 
+// Removing movie from my watchlist
 watchList.addEventListener("click", (event) => {
   const eventTarget = event.target;
-  // console.log(eventTarget);
 
   if (eventTarget.dataset.id) {
     const movieId = eventTarget.dataset.id;
-    // console.log(movieId);
 
     myWatchlist = myWatchlist.filter((item) => item.id !== movieId);
-    // console.log(myWatchlist);
 
     localStorage.setItem("watchlist", JSON.stringify(myWatchlist));
     renderMyWatchlist();

@@ -41,14 +41,9 @@ function handleSearch() {
         if (data.Response === "True") {
           showUnableMsg();
           hideStartExplore();
-          if (!startExplore.classList.contains("hidden")) {
-            movieList.classList.remove("hidden");
 
-            populateMovie(data.Search);
-          } else {
-            movieList.classList.remove("hidden");
-            populateMovie(data.Search);
-          }
+          movieList.classList.remove("hidden");
+          populateMovie(data.Search);
         } else {
           hideUnableMsg();
 
