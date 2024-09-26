@@ -25,9 +25,6 @@ function handleSearch() {
     showUnableMsg();
 
     hideStartExplore();
-    // if (!startExplore.classList.contains("hidden")) {
-    //   hideStartExplore();
-    // }
   } else {
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&s=${movieInput.value}`)
       .then((res) => {
@@ -43,9 +40,8 @@ function handleSearch() {
 
         if (data.Response === "True") {
           showUnableMsg();
-
+          hideStartExplore();
           if (!startExplore.classList.contains("hidden")) {
-            hideStartExplore();
             movieList.classList.remove("hidden");
 
             populateMovie(data.Search);
@@ -56,9 +52,7 @@ function handleSearch() {
         } else {
           hideUnableMsg();
 
-          if (!startExplore.classList.contains("hidden")) {
-            hideStartExplore();
-          }
+          hideStartExplore();
         }
       })
       .catch((err) => {
