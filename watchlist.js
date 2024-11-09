@@ -18,7 +18,12 @@ function renderMyWatchlist() {
       fetch(
         `https://www.omdbapi.com/?apikey=cddaec6f&i=${myWatchlist[item].id}`
       )
-        .then((res) => res.json())
+        .then((res) => {
+          if (!res.ok) {
+            throw Error("Something went wrong...");
+          }
+          return res.json();
+        })
         .then((data) => {
           watchList.innerHTML += `
             <div class="movieData">
@@ -52,6 +57,9 @@ function renderMyWatchlist() {
               </div>
             </div>
           `;
+        })
+        .catch((err) => {
+          console.log(err);
         });
     }
   }
