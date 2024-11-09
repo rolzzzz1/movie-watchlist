@@ -71,7 +71,12 @@ function populateMovie(mList) {
     );
 
     fetch(`https://www.omdbapi.com/?apikey=cddaec6f&i=${currentMovie.imdbID}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Something went wrong...");
+        }
+        return res.json();
+      })
       .then((data) => {
         movieList.innerHTML += `
           <div class="movieData">
@@ -114,6 +119,9 @@ function populateMovie(mList) {
             currentMovie.imdbID
           ).innerHTML = `<p class="watchlistMsg">Added</p>`;
         }
+      })
+      .catch((err) => {
+        console.log(err);
       });
   }
 }
