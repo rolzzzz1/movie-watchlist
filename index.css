@@ -121,8 +121,8 @@ header > img {
 /* MAIN BODY */
 .container {
   /* max-width: 550px; */
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin: 0 auto;
   width: 70%;
   height: 70%;
@@ -279,4 +279,7 @@ header > img {
 
 button:disabled {
   cursor: context-menu;
+}
+
+@media screen and (max-width: 320px) {
 }
