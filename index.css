@@ -115,6 +115,7 @@ header > img {
 /* MAIN BODY */
 .container {
   max-width: 550px;
+  border: #000000 2px solid;
 }
 
 .emptyWatchlist {
