@@ -78,6 +78,7 @@ function populateMovie(mList) {
         return res.json();
       })
       .then((data) => {
+        console.log(data);
         movieList.innerHTML += `
           <div class="movieData">
             <img
