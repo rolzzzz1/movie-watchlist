@@ -25,6 +25,7 @@ function renderMyWatchlist() {
           return res.json();
         })
         .then((data) => {
+          console.log(data);
           watchList.innerHTML += `
             <div class="movieData">
               <img
