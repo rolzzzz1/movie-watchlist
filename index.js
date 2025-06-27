@@ -79,7 +79,7 @@ function populateMovie(mList) {
       })
       .then((data) => {
         console.log(data);
-        const poster = data.Poster === "N/A" ? "/img/Icon.png" : data.poster;
+        const poster = data.Poster === "N/A" ? "/img/Icon.png" : data.Poster;
         movieList.innerHTML += `
           <div class="movieData">
             <img
