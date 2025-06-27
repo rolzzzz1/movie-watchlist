@@ -121,6 +121,8 @@ header > img {
 /* MAIN BODY */
 .container {
   /* max-width: 550px; */
+  display: flex;
+  justify-content: center;
   width: 80%;
   height: 70%;
 }
