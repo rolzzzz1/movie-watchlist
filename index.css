@@ -2,9 +2,8 @@ html,
 body {
   margin: 0 auto;
   padding: 0;
-  height: 98vh;
+  height: 100vh;
   max-height: 780px;
-  max-width: 550px;
   min-width: 320px;
 }
 
@@ -41,8 +40,8 @@ body {
 /* HEADER */
 header {
   position: relative;
-  min-width: 300px;
-  height: 208px;
+  /* height: 208px; */
+  height: 30%;
 }
 
 header > img {
@@ -81,14 +80,18 @@ header > img {
 .formDiv {
   position: absolute;
   top: 120%;
-  transform: translate(0, -120%);
+  transform: translate(0, -160%);
   width: 100%;
   opacity: 100%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  max-width: 550px;
+  min-width: 320px;
+  /* max-width: 550px; */
 }
 
 .formDiv > form {
+  width: 80%;
   display: flex;
   justify-content: center;
   font-size: 14px;
@@ -116,7 +119,8 @@ header > img {
 
 /* MAIN BODY */
 .container {
-  max-width: 550px;
+  /* max-width: 550px; */
+  height: 70%;
 }
 
 .emptyWatchlist {
@@ -145,7 +149,7 @@ header > img {
 }
 
 .startExplore {
-  height: 60%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
