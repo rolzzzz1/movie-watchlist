@@ -78,7 +78,6 @@ function populateMovie(mList) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         const poster = data.Poster === "N/A" ? "/img/Icon.png" : data.Poster;
         movieList.innerHTML += `
           <div class="movieData">
