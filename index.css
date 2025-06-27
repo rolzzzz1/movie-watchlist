@@ -2,7 +2,7 @@ html,
 body {
   margin: 0 auto;
   padding: 0;
-  height: 90vh;
+  height: 98vh;
   max-height: 780px;
   max-width: 550px;
   border: #000000 10px solid;
@@ -43,7 +43,7 @@ body {
 /* HEADER */
 header {
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
   height: 208px;
   border-radius: 20px;
 }
