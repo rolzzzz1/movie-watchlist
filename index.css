@@ -41,7 +41,7 @@ body {
 header {
   position: relative;
   /* height: 208px; */
-  height: 30%;
+  height: 35%;
 }
 
 header > img {
@@ -80,7 +80,7 @@ header > img {
 .formDiv {
   position: absolute;
   top: 120%;
-  transform: translate(0, -120%);
+  transform: translate(0, -100%);
   width: 100%;
   opacity: 100%;
   display: flex;
