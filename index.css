@@ -123,6 +123,7 @@ header > img {
   /* max-width: 550px; */
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   width: 80%;
   height: 70%;
 }
