@@ -43,6 +43,7 @@ body {
 header {
   position: relative;
   height: 208px;
+  border-radius: 20px;
 }
 
 header > img {
